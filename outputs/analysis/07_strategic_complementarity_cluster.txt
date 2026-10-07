@@ -1,0 +1,21 @@
+====================================================================================================
+STRATEGIC COMPLEMENTARITY — 116th Congress
+Δlog L_ib,t+1 ~ entry_j + rbo_ij + entry_j×rbo_ij | firm-bill + quarter FE | SE clustered by focal (i,b,t)
+β_ES > 0: entry-associated spending change becomes more positive as RBO similarity increases
+====================================================================================================
+RBO 116th              67,194 dyad rows | 250 focal firms | 3,960 firm-bill groups | RBO p25=0.0072, p75=0.1307
+RBO 115th (lagged)     60,621 dyad rows | 214 focal firms | 3,626 firm-bill groups | RBO p25=0.0064, p75=0.0871
+
+Spec                             N    Groups   Clusters      β_E      β_S     β_ES       SE       p
+----------------------------------------------------------------------------------------------------
+A — full RBO-linked         66,862     3,628     10,914   -0.013    0.031   -0.125    0.050   0.013 *
+B — high-RBO (≥p75)         16,450     1,855      5,951   -0.125   -0.059    0.147    0.078   0.059 
+C — low-RBO (<p25)          16,424     1,814      4,664   -0.000    4.648   -8.001    3.536   0.024 *
+----------------------------------------------------------------------------------------------------
+D — full (lagged RBO)       60,326     3,331      9,859   -0.020    0.009    0.008    0.046   0.868 
+E — high-RBO lag (≥p75)     14,767     1,920      5,973   -0.048   -0.055   -0.005    0.080   0.946 
+F — low-RBO lag (<p25)      14,865     1,536      3,973   -0.010    4.039   -8.434    4.563   0.065 
+----------------------------------------------------------------------------------------------------
+N is the number of dyadic rows in retained firm-bill groups. Clusters are distinct focal (i,b,t) outcomes. SE and p refer to β_ES. * p<0.05  ** p<0.01  *** p<0.001
+
+Saved to outputs/analysis

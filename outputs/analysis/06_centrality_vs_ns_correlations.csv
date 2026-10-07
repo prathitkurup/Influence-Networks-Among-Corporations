@@ -1,0 +1,7 @@
+centrality,outcome,rho_full,p_full,n_full,rho_top30,p_top30,n_top30,top30_overlap_fraction
+Global PageRank,net_strength (global),0.2006,0.00074,280,0.3504,0.05766,30,0.36666666666666664
+Global PageRank,wc_net_strength (within-comm),0.1764,0.00499,252,0.1253,0.50959,30,0.3333333333333333
+Katz centrality,net_strength (global),0.1876,0.00161,280,0.3664,0.04643,30,0.36666666666666664
+Katz centrality,wc_net_strength (within-comm),0.1782,0.00454,252,0.2761,0.13973,30,0.3333333333333333
+WC eigenvector,net_strength (global),0.2248,0.00015,280,0.3148,0.0902,30,0.36666666666666664
+WC eigenvector,wc_net_strength (within-comm),0.1752,0.0053,252,0.083,0.66288,30,0.36666666666666664

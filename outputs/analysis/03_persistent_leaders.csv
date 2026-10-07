@@ -1,0 +1,11 @@
+sector,firm,n_congresses,in_congresses
+Tech/Telecom,MICROSOFT,5,"111, 112, 115, 116, 117"
+Tech/Telecom,TEXAS INSTRUMENTS,5,"113, 114, 115, 116, 117"
+Energy/Utilities,XCEL ENERGY,6,"111, 112, 113, 114, 115, 117"
+Energy/Utilities,DUKE ENERGY,5,"111, 112, 113, 114, 115"
+Energy/Utilities,DTE ENERGY,5,"113, 114, 115, 116, 117"
+Energy/Utilities,EXELON,4,"112, 115, 116, 117"
+Defense/Industrial,LOCKHEED MARTIN,5,"111, 112, 113, 114, 117"
+Defense/Industrial,UNITED AIRLINES HOLDINGS,5,"112, 113, 114, 115, 117"
+Consumer/Manufacturing,INTERNATIONAL PAPER,5,"111, 112, 113, 114, 117"
+Consumer/Manufacturing,NUCOR,4,"112, 113, 114, 115"

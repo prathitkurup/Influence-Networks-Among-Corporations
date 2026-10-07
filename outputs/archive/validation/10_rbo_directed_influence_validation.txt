@@ -1,0 +1,49 @@
+==============================================================
+  10 — Congress Influence Network Validation
+==============================================================
+
+  Check  1: Edge CSV schema
+    PASS  —  7,738 rows, 9 columns
+
+  Check  2: RBO weight range
+    FAIL  —  925 weights outside (0,1]: count    925.0
+mean       0.0
+std        0.0
+min        0.0
+25%        0.0
+50%        0.0
+75%        0.0
+max        0.0
+Name: weight, dtype: float64
+
+  Check  3: Bidirectional structure
+    PASS  —  3,869 pairs; all bidirectional, weights sum to rbo
+
+  Check  4: net_temporal arithmetic
+    PASS  —  all rows consistent
+
+  Check  5: Weight formula
+    PASS  —  all 7,738 rows satisfy weight formula within 1e-4
+
+  Check  6: Balanced edge weights
+    PASS  —  3,958 balanced edges all have weight ≈ rbo/2
+
+  Check  7: Node net_influence math
+    PASS  —  all 293 nodes consistent
+
+  Check  8: Node color consistency
+    PASS  —  all 293 nodes correctly colored
+
+  Check  9: Ranked-list CSV integrity
+    PASS  —  292 firms, 4,092 rows; max rank per firm: 30
+
+  Check 10: RBO spot-check (n=20)
+    PASS  —  20 random decisive pairs verified (rbo column + weight formula)
+
+  Check 11: Node net_strength math
+    PASS  —  all 293 nodes consistent
+
+==============================================================
+  10 / 11 checks passed
+  *** Some checks FAILED — review output above ***
+==============================================================

@@ -1,0 +1,197 @@
+======================================================================
+ANALYSIS 03: INDUSTRY-SECTOR INFLUENCER HIERARCHY (111th–117th)
+======================================================================
+
+[1/3] Computing wc_net_strength for all congresses ...
+  111th: 186 firms
+  112th: 203 firms
+  113th: 208 firms
+  114th: 217 firms
+  115th: 222 firms
+  116th: 252 firms
+  117th: 209 firms
+
+[2/3] Per-community leaderboards and rank stability ...
+
+====================================================================
+  Finance/Insurance  (members=72, stable across all 7 congresses=35)
+====================================================================
+
+  Top-5 within-community agenda-setters by wc_net_strength:
+
+  Rank   111th                              112th                              113th                              114th                              115th                              116th                              117th                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1      AMERICAN FAMILY IN (+8.53)        AMERICAN FAMILY IN (+2.90)        AMERICAN FAMILY IN (+4.61)        NORTHWESTERN MUTUA (+10.79)       HARTFORD FINANCIAL (+7.41)        PNC FINANCIAL SERV (+2.16)        NEW YORK LIFE INSU (+2.09)      
+  2      HARTFORD FINANCIAL (+3.57)        PRINCIPAL FINANCIA (+2.61)        NORTHWESTERN MUTUA (+3.15)        TIAA (+7.11)                      JPMORGAN CHASE & C (+5.14)        WELLS FARGO (+1.93)               GUARDIAN LIFE INS. (+1.78)      
+  3      STATE FARM INSURAN (+3.56)        AMERICAN EXPRESS (+2.51)          USAA (+2.49)                      JPMORGAN CHASE & C (+4.48)        STATE FARM INSURAN (+4.89)        CITIGROUP (+1.58)                 PRINCIPAL FINANCIA (+1.51)      
+  4      NATIONWIDE (+2.39)                HARTFORD FINANCIAL (+1.31)        CAPITAL ONE FINANC (+2.38)        U.S. BANCORP (+3.92)              ALLSTATE (+3.76)                  NORTHWESTERN MUTUA (+1.52)        BLACKROCK (+1.45)               
+  5      PRINCIPAL FINANCIA (+1.73)        NATIONWIDE (+1.30)                FIFTH THIRD BANCOR (+1.42)        AMERIPRISE FINANCI (+2.93)        PRUDENTIAL FINANCI (+3.76)        PRUDENTIAL FINANCI (+1.32)        AIG (+1.38)                     
+
+  Rank stability (n=35 stable firms):
+    Kendall's W = 0.2416  chi2=57.49  p=0.00714
+    Adjacent-congress Spearman rho:
+      111→112: rho=+0.225  p=0.1945 
+      112→113: rho=+0.041  p=0.8168 
+      113→114: rho=+0.411  p=0.0142 *
+      114→115: rho=+0.211  p=0.2245 
+      115→116: rho=+0.058  p=0.7388 
+      116→117: rho=+0.353  p=0.0375 *
+
+  Persistent leaders (top-5 by wc_net_strength in ≥4/7 congresses):
+    None — no firm reaches top-5 in ≥4 of 7 congresses.
+
+====================================================================
+  Tech/Telecom  (members=55, stable across all 7 congresses=26)
+====================================================================
+
+  Top-5 within-community agenda-setters by wc_net_strength:
+
+  Rank   111th                              112th                              113th                              114th                              115th                              116th                              117th                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1      MICROSOFT (+1.74)                 MICROSOFT (+4.46)                 ORACLE (+10.64)                   HP (+5.72)                        MICROSOFT (+2.23)                 MICROSOFT (+3.15)                 HEWLETT PACKARD EN (+3.86)      
+  2      IBM (+1.52)                       INTEL (+2.28)                     TEXAS INSTRUMENTS (+5.02)         AT&T (+4.71)                      AT&T (+2.11)                      TEXAS INSTRUMENTS (+2.50)         DELL TECHNOLOGIES (+2.97)       
+  3      VERIZON (+1.17)                   CBS (+2.01)                       APPLE (+2.99)                     FACEBOOK (+3.55)                  TEXAS INSTRUMENTS (+1.62)         HEWLETT PACKARD EN (+2.04)        AMAZON (+2.64)                  
+  4      CBS (+1.10)                       TARGET (+0.94)                    IBM (+2.74)                       TEXAS INSTRUMENTS (+2.90)         IHEARTMEDIA (+1.17)               APPLIED MATERIALS (+1.92)         MICROSOFT (+2.36)               
+  5      YUM BRANDS (+0.92)                ORACLE (+0.83)                    NEWS CORP. (+2.55)                CISCO SYSTEMS (+2.39)             IBM (+0.98)                       AT&T (+1.69)                      TEXAS INSTRUMENTS (+2.18)       
+
+  Rank stability (n=26 stable firms):
+    Kendall's W = 0.3342  chi2=58.49  p=0.00017
+    Adjacent-congress Spearman rho:
+      111→112: rho=+0.081  p=0.6939 
+      112→113: rho=+0.050  p=0.8086 
+      113→114: rho=-0.196  p=0.3375 
+      114→115: rho=+0.496  p=0.0100 *
+      115→116: rho=+0.413  p=0.0362 *
+      116→117: rho=+0.195  p=0.3392 
+
+  Persistent leaders (top-5 by wc_net_strength in ≥4/7 congresses):
+    MICROSOFT                                5/7  (111, 112, 115, 116, 117th)
+    TEXAS INSTRUMENTS                        5/7  (113, 114, 115, 116, 117th)
+
+====================================================================
+  Energy/Utilities  (members=49, stable across all 7 congresses=24)
+====================================================================
+
+  Top-5 within-community agenda-setters by wc_net_strength:
+
+  Rank   111th                              112th                              113th                              114th                              115th                              116th                              117th                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1      XCEL ENERGY (+8.47)               EXELON (+6.09)                    FIRSTENERGY (+4.37)               XCEL ENERGY (+6.54)               EXELON (+5.92)                    DTE ENERGY (+5.83)                EXELON (+5.49)                  
+  2      DUKE ENERGY (+7.11)               DUKE ENERGY (+5.72)               DUKE ENERGY (+3.32)               DTE ENERGY (+5.26)                XCEL ENERGY (+3.62)               CALPINE (+4.86)                   ENTERGY (+2.87)                 
+  3      DOMINION ENERGY (+6.90)           SOUTHERN (+4.64)                  DTE ENERGY (+3.26)                DUKE ENERGY (+4.01)               DUKE ENERGY (+3.61)               CMS ENERGY (+3.89)                XCEL ENERGY (+2.76)             
+  4      CMS ENERGY (+2.83)                ENTERGY (+4.53)                   XCEL ENERGY (+3.26)               CMS ENERGY (+2.28)                DTE ENERGY (+2.03)                FIRSTENERGY (+2.75)               PUBLIC SERVICE ENT (+2.19)      
+  5      EDISON INTERNATION (+2.20)        XCEL ENERGY (+3.47)               EDISON INTERNATION (+2.02)        ENTERGY (+2.24)                   PPL (+1.38)                       EXELON (+1.92)                    DTE ENERGY (+1.92)              
+
+  Rank stability (n=24 stable firms):
+    Kendall's W = 0.4455  chi2=71.73  p=0.0
+    Adjacent-congress Spearman rho:
+      111→112: rho=+0.241  p=0.2569 
+      112→113: rho=+0.150  p=0.4829 
+      113→114: rho=+0.421  p=0.0406 *
+      114→115: rho=+0.543  p=0.0061 **
+      115→116: rho=+0.398  p=0.0539 
+      116→117: rho=+0.408  p=0.0479 *
+
+  Persistent leaders (top-5 by wc_net_strength in ≥4/7 congresses):
+    XCEL ENERGY                              6/7  (111, 112, 113, 114, 115, 117th)
+    DUKE ENERGY                              5/7  (111, 112, 113, 114, 115th)
+    DTE ENERGY                               5/7  (113, 114, 115, 116, 117th)
+    EXELON                                   4/7  (112, 115, 116, 117th)
+
+====================================================================
+  Defense/Industrial  (members=46, stable across all 7 congresses=23)
+====================================================================
+
+  Top-5 within-community agenda-setters by wc_net_strength:
+
+  Rank   111th                              112th                              113th                              114th                              115th                              116th                              117th                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1      SOUTHWEST AIRLINES (+2.08)        UNITED AIRLINES HO (+2.89)        UNITED TECHNOLOGIE (+2.05)        NORTHROP GRUMMAN (+3.62)          UNITED AIRLINES HO (+3.61)        NORTHROP GRUMMAN (+1.92)          UNITED AIRLINES HO (+4.19)      
+  2      BOEING (+1.98)                    L3HARRIS TECHNOLOG (+2.56)        NORFOLK SOUTHERN (+1.62)          LOCKHEED MARTIN (+3.37)           TEXTRON (+3.06)                   BALL (+1.62)                      LOCKHEED MARTIN (+2.90)         
+  3      TEXTRON (+1.59)                   DELTA AIR LINES (+2.15)           GENERAL ELECTRIC (+1.21)          UNITED AIRLINES HO (+1.18)        GENERAL DYNAMICS (+2.18)          NORFOLK SOUTHERN (+1.57)          GRAPHIC PACKAGING  (+2.53)      
+  4      LOCKHEED MARTIN (+1.42)           LOCKHEED MARTIN (+2.08)           UNITED AIRLINES HO (+1.21)        AMERICAN AIRLINES  (+0.68)        DELTA AIR LINES (+1.70)           UNION PACIFIC (+1.50)             WESTROCK (+1.73)                
+  5      DELTA AIR LINES (+1.21)           NORFOLK SOUTHERN (+1.80)          LOCKHEED MARTIN (+1.06)           CORNING (+0.64)                   LEIDOS HOLDINGS (+1.51)           GENERAL DYNAMICS (+0.91)          SOUTHWEST AIRLINES (+1.26)      
+
+  Rank stability (n=23 stable firms):
+    Kendall's W = 0.2993  chi2=46.09  p=0.00192
+    Adjacent-congress Spearman rho:
+      111→112: rho=+0.112  p=0.6120 
+      112→113: rho=+0.226  p=0.2992 
+      113→114: rho=+0.496  p=0.0162 *
+      114→115: rho=+0.126  p=0.5682 
+      115→116: rho=+0.290  p=0.1802 
+      116→117: rho=+0.225  p=0.3013 
+
+  Persistent leaders (top-5 by wc_net_strength in ≥4/7 congresses):
+    LOCKHEED MARTIN                          5/7  (111, 112, 113, 114, 117th)
+    UNITED AIRLINES HOLDINGS                 5/7  (112, 113, 114, 115, 117th)
+
+====================================================================
+  Health/Pharma  (members=42, stable across all 7 congresses=15)
+====================================================================
+
+  Top-5 within-community agenda-setters by wc_net_strength:
+
+  Rank   111th                              112th                              113th                              114th                              115th                              116th                              117th                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1      HERSHEY (+0.99)                   MERCK (+0.86)                     JOHNSON & JOHNSON (+0.83)         MOLINA HEALTHCARE (+0.80)         BRISTOL-MYERS SQUI (+1.70)        ABBVIE (+3.91)                    MERCK (+3.55)                   
+  2      AMGEN (+0.76)                     ELI LILLY (+0.59)                 RITE AID (+0.67)                  ELI LILLY (+0.64)                 ABBVIE (+1.35)                    LABORATORY CORP. O (+2.89)        LABORATORY CORP. O (+1.87)      
+  3      BRISTOL-MYERS SQUI (+0.62)        ABBOTT LABORATORIE (+0.36)        HUMANA (+0.55)                    WALGREENS BOOTS AL (+0.44)        CVS HEALTH (+1.22)                CVS HEALTH (+2.35)                CIGNA (+1.31)                   
+  4      MCKESSON (+0.55)                  AMERISOURCEBERGEN (+0.15)         AMERISOURCEBERGEN (+0.48)         AMGEN (+0.35)                     CENTENE (+1.05)                   GILEAD SCIENCES (+2.12)           CVS HEALTH (+0.74)              
+  5      CENTENE (+0.34)                   JOHNSON & JOHNSON (+0.14)         KIMBERLY-CLARK (+0.21)            BRISTOL-MYERS SQUI (+0.32)        HUMANA (+0.93)                    CIGNA (+1.47)                     HUMANA (+0.70)                  
+
+  Rank stability (n=15 stable firms):
+    Kendall's W = 0.0875  chi2=8.57  p=0.85749
+    Adjacent-congress Spearman rho:
+      111→112: rho=-0.307  p=0.2655 
+      112→113: rho=+0.204  p=0.4668 
+      113→114: rho=-0.075  p=0.7905 
+      114→115: rho=-0.436  p=0.1045 
+      115→116: rho=+0.243  p=0.3831 
+      116→117: rho=-0.079  p=0.7808 
+
+  Persistent leaders (top-5 by wc_net_strength in ≥4/7 congresses):
+    None — no firm reaches top-5 in ≥4 of 7 congresses.
+
+====================================================================
+  Consumer/Manufacturing  (members=17, stable across all 7 congresses=2)
+====================================================================
+
+  Top-5 within-community agenda-setters by wc_net_strength:
+
+  Rank   111th                              112th                              113th                              114th                              115th                              116th                              117th                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1      LAND O'LAKES (+0.98)              INTERNATIONAL PAPE (+0.18)        PEPSICO (+1.68)                   KELLOGG (+2.73)                   AK STEEL HOLDING (+0.27)          AK STEEL HOLDING (+1.03)          INTERNATIONAL PAPE (+0.43)      
+  2      CAMPBELL SOUP (+0.88)             NIKE (+0.11)                      INTERNATIONAL PAPE (+0.37)        CAMPBELL SOUP (+0.47)             LAND O'LAKES (+0.15)              COCA-COLA (+0.74)                 ILLINOIS TOOL WORK (+0.34)      
+  3      INTERNATIONAL PAPE (+0.29)        NUCOR (+0.05)                     WASTE MANAGEMENT (+0.06)          NUCOR (+0.41)                     PEPSICO (+0.09)                   GAP (+0.56)                       MOLSON COORS BEVER (+0.01)      
+  4      COCA-COLA (+0.23)                 LAND O'LAKES (+0.00)              ILLINOIS TOOL WORK (+0.01)        INTERNATIONAL PAPE (+0.08)        NUCOR (+0.04)                     ILLINOIS TOOL WORK (+0.16)        PEPSICO (-0.02)                 
+  5      NIKE (-0.00)                      DEAN FOODS (+0.00)                NUCOR (+0.01)                     COCA-COLA (+0.06)                 DEAN FOODS (+0.00)                DEAN FOODS (+0.00)                NIKE (-0.02)                    
+
+  Rank stability: insufficient stable firms (n=2 < 5).
+
+  Persistent leaders (top-5 by wc_net_strength in ≥4/7 congresses):
+    INTERNATIONAL PAPER                      5/7  (111, 112, 113, 114, 117th)
+    NUCOR                                    4/7  (112, 113, 114, 115th)
+
+======================================================================
+SUMMARY: RANK CONCORDANCE BY SECTOR
+======================================================================
+
+  Sector                  n_stable        W          p  interpretation
+  ─────────────────────────────────────────────────────────────────
+  Finance/Insurance             35   0.2416    0.00714  weak but significant
+  Tech/Telecom                  26   0.3342    0.00017  significant concordance
+  Energy/Utilities              24   0.4455    0.00000  significant concordance
+  Defense/Industrial            23   0.2993    0.00192  weak but significant
+  Health/Pharma                 15   0.0875    0.85749  not significant
+
+[3/3] Saving outputs ...
+    03_within_community_leaderboards.csv
+    03_rank_stability.csv
+    03_persistent_leaders.csv
+    03_industry_hierarchy.txt
+    03_kendalls_w_bar.png
+    03_energy_rank_flow.png
+
+======================================================================
+Analysis complete.

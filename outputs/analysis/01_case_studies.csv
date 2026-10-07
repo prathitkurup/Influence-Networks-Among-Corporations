@@ -1,0 +1,21 @@
+influencer,follower,rbo,net_temporal,influence_score,source_firsts,target_firsts,shared_bills,sector_influencer,sector_follower,influencer_net_strength,follower_net_strength
+BERKSHIRE HATHAWAY,CSX,0.653103,5,3.2655149999999997,6,1,17,Energy/Utilities,Defense/Industrial,3.7763,-6.1999
+DTE ENERGY,PPL,0.493633,5,2.468165,5,0,15,Energy/Utilities,Energy/Utilities,5.8428,-5.2932
+LABORATORY CORP. OF AMERICA,QUEST DIAGNOSTICS,0.389823,6,2.3389379999999997,6,0,7,Health/Pharma,Health/Pharma,2.8698,-3.7672
+ABBVIE,MERCK,0.256863,7,1.798041,7,0,9,Health/Pharma,Health/Pharma,4.167,-1.8167
+MICROSOFT,ORACLE,0.297689,6,1.7861339999999999,6,0,8,Tech/Telecom,Tech/Telecom,3.3167,-5.2279
+CBS,FOX CORP,0.265185,6,1.59111,7,1,10,Tech/Telecom,Tech/Telecom,1.7662,-2.1512
+COCA-COLA,PEPSICO,0.697345,2,1.39469,2,0,5,Consumer/Manufacturing,Consumer/Manufacturing,1.889,-0.184
+CMS ENERGY,XCEL ENERGY,0.146356,7,1.0244920000000002,7,0,12,Energy/Utilities,Energy/Utilities,3.8887,1.206
+CENTENE,MUTUAL OF OMAHA INSURANCE,0.25189,4,1.00756,4,0,6,Health/Pharma,Finance/Insurance,0.7874,-5.2195
+AT&T,VERIZON,0.23587,4,0.94348,4,0,15,Tech/Telecom,Tech/Telecom,1.7775,-0.2509
+DTE ENERGY,XCEL ENERGY,0.151983,6,0.9118980000000001,7,1,17,Energy/Utilities,Energy/Utilities,5.8428,1.206
+ABBVIE,BIOGEN,0.227762,4,0.911048,5,1,10,Health/Pharma,Health/Pharma,4.167,-3.5962
+COCA-COLA,HOME DEPOT,0.455396,2,0.910792,2,0,2,Consumer/Manufacturing,Tech/Telecom,1.889,-2.6837
+MOLINA HEALTHCARE,MUTUAL OF OMAHA INSURANCE,0.442617,2,0.885234,2,0,4,Health/Pharma,Finance/Insurance,0.8202,-5.2195
+CALPINE,SOUTHERN,0.436287,2,0.872574,2,0,7,Energy/Utilities,Energy/Utilities,4.9431,0.7767
+ARAMARK,JACOBS ENGINEERING GROUP,0.283386,3,0.8501580000000001,3,0,3,Health/Pharma,Defense/Industrial,1.4781,-1.2892
+DTE ENERGY,FIRSTENERGY,0.206881,4,0.827524,4,0,11,Energy/Utilities,Energy/Utilities,5.8428,2.7485
+CMS ENERGY,FIRSTENERGY,0.205728,4,0.822912,4,0,8,Energy/Utilities,Energy/Utilities,3.8887,2.7485
+FIRSTENERGY,PPL,0.411107,2,0.822214,6,4,19,Energy/Utilities,Energy/Utilities,2.7485,-5.2932
+CVS HEALTH,HUMANA,0.265935,3,0.7978049999999999,4,1,9,Health/Pharma,Health/Pharma,2.6826,-1.5957

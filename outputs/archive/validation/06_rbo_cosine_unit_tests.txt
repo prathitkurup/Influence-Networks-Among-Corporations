@@ -1,0 +1,18 @@
+=======================================================
+Validation 06: RBO and cosine similarity unit tests
+=======================================================
+  PASS  RBO perfect 3-item agreement
+  PASS  RBO disjoint lists = 0
+  PASS  RBO empty list = 0
+  PASS  RBO top-weight: rank-1 swap hurts more than rank-5
+  PASS  RBO symmetry
+  PASS  build_frac_matrix shape (3 firms x 3 bills)
+  PASS  build_frac_matrix no negatives
+  PASS  build_frac_matrix zero-fill missing pairs
+  PASS  Cosine self-similarity = 1.0
+  PASS  Cosine symmetry (sim[i,j] == sim[j,i])
+  PASS  Cosine disjoint firms = 0
+  PASS  build_ranked_lists sorted by spend descending
+
+Results: 12 passed, 0 failed
+=======================================================

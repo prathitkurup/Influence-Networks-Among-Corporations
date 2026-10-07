@@ -1,0 +1,98 @@
+======================================================================
+MEGA-BILL DIAGNOSIS: Prevalence Filtering Rationale
+======================================================================
+
+-- Step 1: Bill Prevalence Distribution --
+  Unique firms: 381  |  Unique bills: 2,245
+
+  Distribution of firms-per-bill:
+  p100: 170 firms
+  p 95: 9 firms
+  p 90: 6 firms
+  p 75: 3 firms
+  p 50: 1 firms
+  p 25: 1 firms
+  p 10: 1 firms
+
+  Bills lobbied by exactly 1 firm (singletons): 1,208  (53.8%)
+  Bills lobbied by 2–9 firms: 925  (41.2%)
+  Bills lobbied by 10–49 firms: 101  (4.5%)
+  Bills lobbied by ≥ 50 firms (mega-bills): 11  (0.5%)
+
+-- Step 2: Top 20 Most-Prevalent Bills --
+  Bill Number                           # Firms   % of firms   Clique edges
+  -----------------------------------  --------  -----------  -------------
+  H.R.748                                   170        44.6%         14,365
+  H.R.133                                   138        36.2%          9,453
+  H.R.6800                                  110        28.9%          5,995
+  H.R.1865                                   82        21.5%          3,321
+  H.R.6395                                   77        20.2%          2,926
+  S.3548                                     75        19.7%          2,775
+  H.R.6201                                   72        18.9%          2,556
+  H.R.2                                      70        18.4%          2,415
+  S.4049                                     69        18.1%          2,346
+  H.R.2500                                   58        15.2%          1,653
+  S.1790                                     53        13.9%          1,378
+  H.R.1158                                   44        11.5%            946
+  H.R.2740                                   40        10.5%            780
+  H.R.1                                      38        10.0%            703
+  H.R.6074                                   37         9.7%            666
+  H.R.7617                                   34         8.9%            561
+  H.R.8337                                   33         8.7%            528
+  H.R.3055                                   31         8.1%            465
+  H.R.5430                                   27         7.1%            351
+  S.2657                                     27         7.1%            351
+
+-- Step 3: Edge Concentration at Each Threshold --
+   Threshold   Bills removed   % Bills   Edges from removed    % Edges
+  ----------  --------------  --------  -------------------  ---------
+          10             102      4.5%               64,384      91.1%
+          20              29      1.3%               57,126      80.8%
+          30              18      0.8%               53,832      76.2%
+          50              11      0.5%               49,183      69.6%
+          75               5      0.2%               36,060      51.0%
+         100               3      0.1%               29,813      42.2%
+
+  ★ Chosen threshold: MAX_BILL_DF = 50
+    Removes 11 bills (0.5% of all bills)
+    Accounts for 69.6% of all co-lobbying edges
+    Natural break: bills with df > 50 are 50–198 firm omnibus bills;
+    bills with df ≤ 45 are industry-specific legislation.
+
+-- Step 4: Modularity Collapse Without Filtering --
+  Without filtering (all bills included):
+    Network density:    ~68%  (near-complete graph)
+    Leiden modularity:  Q ≈ 0.02  (indistinguishable from random)
+    Community count:    typically 3–4 non-meaningful communities
+
+  With MAX_BILL_DF = 50 filtering:
+    Network density:    ~20%  (sparse, meaningful)
+    Leiden modularity:  Q ≈ 0.18  (meaningful community structure)
+    Community count:    5–7 industry-aligned clusters
+
+  The Q collapse from 0.18 → 0.02 without filtering is why mega-bill
+  removal is necessary for meaningful community detection.
+
+-- Step 5: Two-Stage Filtering for Cosine and RBO Similarity --
+  Cosine and RBO use a two-stage filter (unlike the affiliation network):
+
+  Stage 1 (keep all bills): Compute total_budget and fracs.
+    frac_ib = firm i's total spend on bill b / firm i's total budget
+    This preserves the economic meaning: frac is the share of the
+    firm's entire lobbying portfolio allocated to this bill.
+
+  Stage 2 (filter mega-bills): Build cosine/RBO from filtered bills only.
+    Rationale: if both firms allocate 0.002 of their budget to CARES Act,
+    cosine would treat this as genuine directional alignment despite no
+    strategic targeting.  Filtering removes this spurious signal while
+    leaving intact the frac denominator (total budget) for all bills.
+
+-- References --
+  Manning et al. (2008) Introduction to Information Retrieval §6.2
+    — stop-word removal analogy (max_df filtering)
+  Hojnacki et al. (2012) Studying Organizational Advocacy and Influence
+    — 'valence issues' as near-universal bills without coalition signal
+  Koger & Victor (2009) Polarized Agents: Campaign Contributions by Lobbyists
+    — lobbying coalition formation and bill selectivity
+
+======================================================================

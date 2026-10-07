@@ -1,0 +1,152 @@
+======================================================================
+ANALYSIS 05: MULTI-CONGRESS TOP-SET OVERLAP (111th–117th)
+======================================================================
+
+[1/2] Loading net_strength for all congresses ...
+  111th: 272 firms
+  112th: 284 firms
+  113th: 286 firms
+  114th: 285 firms
+  115th: 291 firms
+  116th: 293 firms
+  117th: 286 firms
+
+[2/2] Consecutive congress pair analysis ...
+
+  ────────────────────────────────────────────────────────────
+  111th → 112th Congress
+  Firms in 111th: 272  |  Firms in 112th: 284  |  Common: 253
+  Spearman ρ (net_strength, common firms): 0.0763  p=2.2665e-01
+
+  Jaccard similarity of top-N sets:
+       N    |∩|    |∪|    Jaccard
+  ────────────────────────────────
+      10      2     18     0.1111
+      20      5     35     0.1429
+      30      7     53     0.1321
+
+  Top-30 transitions:
+    Retained:  7/30
+    Exiting:   ['AMERICAN ELECTRIC POWER', 'BOEING', 'CAMPBELL SOUP', 'CSX', 'DARDEN RESTAURANTS', 'DEERE']...
+    Entering:  ['AMAZON', 'BERKSHIRE HATHAWAY', 'BOSTON SCIENTIFIC', 'CBS', 'CHEVRON', 'DELTA AIR LINES']...
+
+  ────────────────────────────────────────────────────────────
+  112th → 113th Congress
+  Firms in 112th: 284  |  Firms in 113th: 286  |  Common: 262
+  Spearman ρ (net_strength, common firms): 0.1587  p=1.0072e-02
+
+  Jaccard similarity of top-N sets:
+       N    |∩|    |∪|    Jaccard
+  ────────────────────────────────
+      10      2     18     0.1111
+      20      4     36     0.1111
+      30      9     51     0.1765
+
+  Top-30 transitions:
+    Retained:  9/30
+    Exiting:   ['AMAZON', 'BERKSHIRE HATHAWAY', 'BOSTON SCIENTIFIC', 'CHEVRON', 'DELTA AIR LINES', 'ENTERGY']...
+    Entering:  ['ALPHABET', 'APPLE', 'BLACKSTONE GROUP', 'CAPITAL ONE FINANCIAL', 'EBAY', 'EDISON INTERNATIONAL']...
+
+  ────────────────────────────────────────────────────────────
+  113th → 114th Congress
+  Firms in 113th: 286  |  Firms in 114th: 285  |  Common: 252
+  Spearman ρ (net_strength, common firms): 0.1806  p=4.0217e-03
+
+  Jaccard similarity of top-N sets:
+       N    |∩|    |∪|    Jaccard
+  ────────────────────────────────
+      10      3     17     0.1765
+      20      5     35     0.1429
+      30     12     48     0.2500
+
+  Top-30 transitions:
+    Retained:  12/30
+    Exiting:   ['ALPHABET', 'AMERICAN EXPRESS', 'AMERICAN FAMILY INSURANCE GROUP', 'APPLE', 'BLACKSTONE GROUP', 'CBS']...
+    Entering:  ['3M', 'AMAZON', 'AMERIPRISE FINANCIAL', 'AT&T', 'BOEING', 'CISCO SYSTEMS']...
+
+  ────────────────────────────────────────────────────────────
+  114th → 115th Congress
+  Firms in 114th: 285  |  Firms in 115th: 291  |  Common: 256
+  Spearman ρ (net_strength, common firms): 0.2065  p=8.9001e-04
+
+  Jaccard similarity of top-N sets:
+       N    |∩|    |∪|    Jaccard
+  ────────────────────────────────
+      10      1     19     0.0526
+      20      6     34     0.1765
+      30      9     51     0.1765
+
+  Top-30 transitions:
+    Retained:  9/30
+    Exiting:   ['3M', 'AMERIPRISE FINANCIAL', 'BOEING', 'CAPITAL ONE FINANCIAL', 'CISCO SYSTEMS', 'CMS ENERGY']...
+    Entering:  ['AIG', 'ALLSTATE', 'AMERICAN FAMILY INSURANCE GROUP', 'BERKSHIRE HATHAWAY', 'BOSTON SCIENTIFIC', 'BRISTOL-MYERS SQUIBB']...
+
+  ────────────────────────────────────────────────────────────
+  115th → 116th Congress
+  Firms in 115th: 291  |  Firms in 116th: 293  |  Common: 263
+  Spearman ρ (net_strength, common firms): 0.1423  p=2.1015e-02
+
+  Jaccard similarity of top-N sets:
+       N    |∩|    |∪|    Jaccard
+  ────────────────────────────────
+      10      0     20     0.0000
+      20      3     37     0.0811
+      30      7     53     0.1321
+
+  Top-30 transitions:
+    Retained:  7/30
+    Exiting:   ['AIG', 'ALLSTATE', 'AMAZON', 'AMERICAN FAMILY INSURANCE GROUP', 'BOSTON SCIENTIFIC', 'BRISTOL-MYERS SQUIBB']...
+    Entering:  ['ABBVIE', 'APPLIED MATERIALS', 'ARAMARK', 'BALL', 'CALPINE', 'CBS']...
+
+  ────────────────────────────────────────────────────────────
+  116th → 117th Congress
+  Firms in 116th: 293  |  Firms in 117th: 286  |  Common: 252
+  Spearman ρ (net_strength, common firms): 0.1031  p=1.0264e-01
+
+  Jaccard similarity of top-N sets:
+       N    |∩|    |∪|    Jaccard
+  ────────────────────────────────
+      10      0     20     0.0000
+      20      5     35     0.1429
+      30      7     53     0.1321
+
+  Top-30 transitions:
+    Retained:  7/30
+    Exiting:   ['ABBVIE', 'APPLIED MATERIALS', 'ARAMARK', 'AT&T', 'BALL', 'BERKSHIRE HATHAWAY']...
+    Entering:  ['AMAZON', 'CAPITAL ONE FINANCIAL', 'DELL TECHNOLOGIES', 'ENTERGY', 'GRAPHIC PACKAGING HOLDING', 'GUARDIAN LIFE INS. CO. OF AMERICA']...
+
+──────────────────────────────────────────────────────────────────────
+SUMMARY: Mean Jaccard by N across all consecutive pairs
+──────────────────────────────────────────────────────────────────────
+
+       N   Mean Jaccard      Min      Max
+  ────────────────────────────────────────
+      10         0.0752   0.0000   0.1765
+      20         0.1329   0.0811   0.1765
+      30         0.1666   0.1321   0.2500
+
+  Interpretation: Jaccard of top-30 ranges from 0.132 to 0.250, mean = 0.167.
+  The top-30 agenda-setter pool rotates substantially between sessions,
+  with roughly half the firms retained in any consecutive pair.
+
+──────────────────────────────────────────────────────────────────────
+FIRMS IN TOP-30 by net_strength IN ALL 7 CONGRESSES
+──────────────────────────────────────────────────────────────────────
+
+  Firms in top-30 all 7 congresses: 0
+
+  Firms in top-30 in ≥5 of 7 congresses:
+    XCEL ENERGY                                6/7  (111, 112, 113, 114, 115, 117th)
+    DTE ENERGY                                 6/7  (112, 113, 114, 115, 116, 117th)
+    CMS ENERGY                                 5/7  (111, 112, 113, 114, 116th)
+    LOCKHEED MARTIN                            5/7  (111, 112, 113, 114, 117th)
+    DUKE ENERGY                                5/7  (111, 112, 113, 114, 115th)
+    MICROSOFT                                  5/7  (112, 114, 115, 116, 117th)
+
+  Outputs:
+    05_set_overlap.csv
+    05_top30_transitions.csv
+    05_multi_congress.txt
+
+======================================================================
+Analysis complete.

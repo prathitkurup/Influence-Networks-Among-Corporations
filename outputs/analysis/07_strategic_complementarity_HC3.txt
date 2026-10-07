@@ -1,0 +1,21 @@
+========================================================================================
+STRATEGIC COMPLEMENTARITY — 116th Congress
+Δlog L_ib,t+1 ~ entry_j + rbo_ij + entry_j×rbo_ij | firm-bill + quarter FE | HC3 SE (no clustering)
+β_ES > 0: spending response to peer entry rises with RBO similarity (complementarity)
+========================================================================================
+RBO 116th          67,194 dyad rows | 250 focal firms | 3,960 firm-bill groups | RBO p25=0.0072, p75=0.1307
+RBO 115th (lagged) 60,621 dyad rows | 214 focal firms | 3,626 firm-bill groups | RBO p25=0.0064, p75=0.0871
+
+Spec                             N    Groups      β_E      β_S     β_ES       SE       p
+----------------------------------------------------------------------------------------
+A — full RBO-linked         66,862     3,628   -0.013    0.031   -0.125    0.033   0.000 ***
+B — high-RBO (≥p75)         16,450     1,855   -0.125   -0.059    0.147    0.069   0.033 *
+C — low-RBO (<p25)          16,424     1,814   -0.000    4.648   -8.001    2.979   0.007 **
+----------------------------------------------------------------------------------------
+D — full (lagged RBO)       60,326     3,331   -0.020    0.009    0.008    0.038   0.837 
+E — high-RBO lag (≥p75)     14,767     1,920   -0.048   -0.055   -0.005    0.077   0.944 
+F — low-RBO lag (<p25)      14,865     1,536   -0.010    4.039   -8.434    3.769   0.025 *
+----------------------------------------------------------------------------------------
+N: rows in firm-bill groups with ≥2 rows. SE and p refer to β_ES. * p<0.05  ** p<0.01  *** p<0.001
+
+Saved to outputs/analysis
